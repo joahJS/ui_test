@@ -8,15 +8,25 @@ export const usehfStore = defineStore('hdFt', () => {
 
     const navText = ref([
         {
-            navSubTexts: '고객만족과 최고의 품질최을 향한 집념으로 최선을 다하는',
-            navTexts: '(주)소나무정보기술',
+            navSubTexts: '여기는',
+            navTexts: '테스트용 페이지입니다.',
         }
     ])
 
     const navGroup = ref([
-        
         {
             navId: 0,
+            linkTo: '',
+            title: 'UI테스트',
+            subT: 'UI Test',
+            childrens: [
+                { subTo: '/test', subTitle: 'Grid 테스트' },
+                { subTo: '/test02', subTitle: 'Grid 테스트 02' },
+            ]
+        },
+        
+        {
+            navId: 1,
             linkTo: '',
             title: '회사소개',
             subT: 'COMPANY',
@@ -28,7 +38,7 @@ export const usehfStore = defineStore('hdFt', () => {
             ]
         },
         {
-            navId: 1,
+            navId: 2,
             linkTo: '',
             title: '제품소개',
             subT: 'BUSINESS',
@@ -39,7 +49,7 @@ export const usehfStore = defineStore('hdFt', () => {
             ]
         },
         {
-            navId: 2,
+            navId: 3,
             linkTo: '',
             title: '고객지원',
             subT: 'CUSTOMER',
@@ -56,7 +66,7 @@ export const usehfStore = defineStore('hdFt', () => {
     const ftGroup = ref([
         {
             ftLogo : '/CI_header_white.svg',
-            address: '경남 밀양시 부북면 전사포리 사포산단 1길 90-11',
+            address: '테스트용_주소 작성',
             tel: '055.000,0000',
             fax: '055.000.0001',
             cpr: 'copyright ⓒ 2023 pineit all rights reserved.',

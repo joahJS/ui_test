@@ -9,6 +9,19 @@ const routes = [
     component: Main,
   },
 
+  //UI 테스트
+
+  {  
+    path: '/test',
+    name: 'Test',
+    component: () => import( /* webpackChunkName: 'Test' */ '@/pages/Test.vue')
+  },
+  {  
+    path: '/test02',
+    name: 'Test02',
+    component: () => import( /* webpackChunkName: 'Test02' */ '@/pages/Test02.vue')
+  },
+
   //회사소개
   {  
       path: '/greet',
