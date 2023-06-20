@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@headlessui/vue": "^1.7.14",
     "pinia": "^2.0.35",
     "swiper": "^9.2.4",
     "tui-grid": "^4.21.12",
